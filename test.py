@@ -39,12 +39,13 @@ for folder in os.listdir(STUDENT_DIR):
 print(f" Loaded Student Names: {id_to_name}")
 
 # Open Webcam
-cap = cv.VideoCapture(0)  # 0 for the default camera
-
+cap = cv.VideoCapture('http://100.102.232.63:4747/video') 
 while True:
     ret, frame = cap.read()
     if not ret:
         break
+
+    frame = cv.rotate(frame, cv.ROTATE_90_COUNTERCLOCKWISE)
 
     gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
     faces_rects = haar_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=4)

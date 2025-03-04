@@ -8,14 +8,14 @@ student_id = input("Enter Student ID: ")
 student_name = input("Enter Student Name: ")
 
 # Directory to Save Face Vectors
-base_path = r'C:\Users\HP\Desktop\Projets\Deep Learning\face_recognition\train'
+base_path = r'C:\Users\DELL\Desktop\project\face_recognition\train'
 student_folder = os.path.join(base_path, f"{student_id}_{student_name}")
 
 if not os.path.exists(student_folder):
     os.makedirs(student_folder)
 
 # Load Haar Cascade for Face Detection
-haar_cascade = cv2.CascadeClassifier(r'C:\Users\HP\Desktop\Projets\Deep Learning\face_recognition\haarcascade_frontalface_default.xml')
+haar_cascade = cv2.CascadeClassifier(r'C:\Users\DELL\Desktop\project\face_recognition\haarcascade_frontalface_default.xml')
 
 # Open Webcam
 cap = cv2.VideoCapture(0)
