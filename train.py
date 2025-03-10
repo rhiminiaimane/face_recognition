@@ -6,7 +6,7 @@ import numpy as np
 haar_cascade = cv.CascadeClassifier(r'C:\Users\HP\Desktop\Projets\Deep Learning\face_recognition\haarcascade_frontalface_default.xml')
 
 # Dataset Directory
-DATASET_DIR = r'C:\Users\HP\Desktop\Projets\Deep Learning\face_recognition\train'
+DATASET_DIR = r'train'
 
 # Face Recognizer Model
 face_recognizer = cv.face.LBPHFaceRecognizer_create()

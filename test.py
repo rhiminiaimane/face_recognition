@@ -13,7 +13,7 @@ face_recognizer.read('face_trained.yml')
 labels = np.load('labels.npy')
 
 # Map Student IDs to Names (Handle Naming Errors)
-STUDENT_DIR = r'C:\Users\HP\Desktop\Projets\Deep Learning\face_recognition\train'
+STUDENT_DIR = r'train'
 id_to_name = {}
 
 for folder in os.listdir(STUDENT_DIR):
@@ -39,7 +39,7 @@ for folder in os.listdir(STUDENT_DIR):
 print(f" Loaded Student Names: {id_to_name}")
 
 # Open Webcam
-cap = cv.VideoCapture('http://100.102.232.63:4747/video') 
+cap = cv.VideoCapture('http://192.168.0.120:4747/video') 
 while True:
     ret, frame = cap.read()
     if not ret:

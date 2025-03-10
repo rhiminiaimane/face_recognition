@@ -8,7 +8,7 @@ student_id = input("Enter Student ID: ")
 student_name = input("Enter Student Name: ")
 
 # Directory to Save Face Vectors
-base_path = r'C:\Users\HP\Desktop\Projets\Deep Learning\face_recognition\train'
+base_path = r'/train'
 student_folder = os.path.join(base_path, f"{student_id}_{student_name}")
 
 if not os.path.exists(student_folder):
