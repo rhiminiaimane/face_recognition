@@ -8,7 +8,7 @@ student_id = input("Enter Student ID: ")
 student_name = input("Enter Student Name: ")
 
 # Directory to Save Face Vectors
-base_path = r'/train'
+base_path = r'train'
 student_folder = os.path.join(base_path, f"{student_id}_{student_name}")
 
 if not os.path.exists(student_folder):
@@ -18,7 +18,7 @@ if not os.path.exists(student_folder):
 haar_cascade = cv2.CascadeClassifier(r'C:\Users\HP\Desktop\Projets\Deep Learning\face_recognition\haarcascade_frontalface_default.xml')
 
 # Open Webcam
-cap = cv2.VideoCapture('http://100.102.232.63:4747/video')
+cap = cv2.VideoCapture('http://100.102.233.65:4747/video')
 count = 0
 max_images = 100  # Number of images to capture
 

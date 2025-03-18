@@ -39,7 +39,7 @@ for folder in os.listdir(STUDENT_DIR):
 print(f" Loaded Student Names: {id_to_name}")
 
 # Open Webcam
-cap = cv.VideoCapture('http://192.168.0.120:4747/video') 
+cap = cv.VideoCapture('http://100.102.233.65:4747/video') 
 while True:
     ret, frame = cap.read()
     if not ret:
