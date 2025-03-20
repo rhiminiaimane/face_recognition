@@ -18,7 +18,10 @@ if not os.path.exists(student_folder):
 haar_cascade = cv2.CascadeClassifier(r'C:\Users\HP\Desktop\Projets\Deep Learning\face_recognition\haarcascade_frontalface_default.xml')
 
 # Open Webcam
-cap = cv2.VideoCapture('http://100.102.233.65:4747/video')
+# cap = cv2.VideoCapture('http://100.102.233.65:4747/video')
+
+cap = cv2.VideoCapture(1)
+
 count = 0
 max_images = 100  # Number of images to capture
 
