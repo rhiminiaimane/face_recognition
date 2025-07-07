@@ -115,14 +115,3 @@ Press **`q`** to exit the webcam stream.
   **`<ID>_<Name>`** (e.g., `101_John`, `102_Alice`).
 
 * Face images are resized to **100x100** for consistent training.
-
----
-
-## 📈 Future Improvements
-
-* Add GUI for data entry and visualization
-* Improve recognition accuracy with deep learning models (e.g., FaceNet, Dlib)
-* Add attendance logging
-* Implement facial recognition via smartphone camera
-
----
